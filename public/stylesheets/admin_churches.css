@@ -1,0 +1,15 @@
+.admin_churches .addButton {
+    cursor: pointer;
+    border: 1px dashed #7C7D7C;
+    margin: 8px;
+    width: 200px; height: 100px;
+    outline: none;
+}
+
+.admin_churches .addButton:hover {
+    background-color: #DADADA;
+}
+
+.admin_churches .newChurch {
+    min-width: 400px;
+}

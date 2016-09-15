@@ -1,0 +1,8 @@
+{
+  "realm": "eternal",
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnVL8k7LJ+yPICZYDZB8jhPWypNd82igOiUeA1JaHjWnsca3gJv+kaDC4OMCajHcFMEsm/cun3i5zQ6MN7RsdpCGWnPIu8Q72TvCyc3TocvW8BCEGHl57i3H5V9Qo3OO28kT5anOH0kFn79glDjS1XPLloweSf8KJN7c6bJmMOPa4e7jiOdQ9jDifRoUMf2V1AkZ4iPy7DIafYBLcbzlDlJWMfW8rs7Ousw4YlQlscXw6eFcCZxMToMLHb8GPZYvQqVXFYQbiV1UrQTBBoZUtvNjMOX9TzJCSFB6DHzrfU1PTS5uFZgWIB2xjZz1VKkeMbdLw57Cpoj6c1kdELogH6QIDAQAB",
+  "auth-server-url": "http://192.168.0.172:8080/auth",
+  "ssl-required": "external",
+  "resource": "eternal-devt",
+  "public-client": true
+}

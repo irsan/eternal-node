@@ -1,0 +1,26 @@
+doctype html
+html(ng-app="EternalApp")
+    head
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/bower_components/angular-material/angular-material.min.css")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,700', rel='stylesheet', type='text/css')
+        link(rel="stylesheet", href="/stylesheets/index.css")
+    block stylesheets
+
+    body(layout="column", ng-controller="mainCtrl", ng-cloak, flex)
+        section(layout="row", flex)
+            md-sidenav(class="sidemenu md-sidenav-left md-whiteframe-z2", md-component-id="left", md-is-locked-open="false")
+                md-content(layout="column", layout-padding)
+                    block menu
+            div(layout="column" flex)
+                block content
+
+        script(src="/bower_components/angular/angular.min.js")
+        script(src="/bower_components/angular-animate/angular-animate.min.js")
+        script(src="/bower_components/angular-aria/angular-aria.min.js")
+        script(src="/bower_components/angular-messages/angular-messages.min.js")
+        script(src="/bower_components/angular-translate/angular-translate.min.js")
+        script(src="/bower_components/angular-route/angular-route.min.js")
+        script(src="/bower_components/angular-material/angular-material.min.js")
+        block script

@@ -1,0 +1,29 @@
+extends layout_default
+
+block stylesheets
+    link(rel="stylesheet", href="/stylesheets/admin.css")
+    link(rel="stylesheet", href="/stylesheets/admin.css")
+    link(rel="stylesheet", href="/stylesheets/admin_churches.css")
+
+block menu
+    div(layout="row", layout-align="start center")
+        md-icon(class="avatar md-48") account_circle
+        div(flex, style="margin-left: 5px;") {{me.displayName}}
+
+block content
+    md-toolbar
+        div(class="md-toolbar-tools")
+            md-button(class="md-icon-button", aria-label="Settings", ng-click="toggleLeft()")
+                md-icon menu
+            h2
+                span Churches
+            span(flex)
+    div(layout="column", flex, ng-view)
+
+block script
+    script(src="/javascripts/admin_index.js")
+    script(src="/javascripts/admin_api.js")
+    script(src="/javascripts/ctrl_admin_dashboard.js")
+    script(src="/javascripts/ctrl_admin_churches.js")
+    script.
+        var me = JSON.parse("!{me}");

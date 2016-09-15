@@ -3,15 +3,29 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www | node_modules/bunyan/bin/bunyan -L"
   },
   "dependencies": {
+    "aws-sdk": "^2.6.1",
     "body-parser": "~1.15.1",
+    "bunyan": "^1.8.1",
+    "connect-redis": "^3.1.0",
     "cookie-parser": "~1.4.3",
+    "crypto": "0.0.3",
     "debug": "~2.2.0",
     "express": "~4.13.4",
+    "express-fileupload": "0.0.5",
+    "express-session": "^1.14.0",
     "jade": "~1.11.0",
+    "keycloak-connect": "^0.2.1",
+    "mongoose": "^4.5.9",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "multer": "^1.2.0",
+    "multer-s3": "^2.3.2",
+    "redis": "^2.6.2",
+    "serve-favicon": "~2.3.0",
+    "stream-to-array": "^2.3.0",
+    "uuid": "^2.0.2",
+    "vasync": "^1.6.4"
   }
 }

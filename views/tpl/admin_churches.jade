@@ -1,0 +1,28 @@
+div(layout="column", layout-padding, class="admin_churches" flex)
+    md-content(flex)
+        div(layout="row", layout-wrap)
+            div(layout="column", layout-align="center center", class="addButton", ng-hide="addChurchMode", ng-click="addChurch()")
+                div
+                    md-icon(class="md-36", flex) add
+                div Add Church
+
+            md-card(class="newChurch", ng-show="addChurchMode")
+                md-card-title
+                    md-card-title-text
+                        span(class="md-headline") New Church
+                md-card-content(layout="column")
+                    md-input-container
+                        label Name of Church
+                        input(type="text", ng-model="newChurch.name")
+
+                    md-input-container
+                        label Permlink
+                        input(type="text", ng-model="newChurch.permlink")
+
+                    md-input-container
+                        label Church Administrator
+                        input(type="text", ng-model="newChurch.admin")
+
+                md-card-actions(layout="row", layout-align="end center")
+                    md-button(ng-click="cancelAddChurch()") Cancel
+                    md-button(class="md-primary", ng-click="saveChurch()") Save

@@ -1,0 +1,18 @@
+{
+  "local": {
+    "mongodb": "mongodb://localhost/eternal",
+    "redis": {
+      "url": "redis://localhost"
+    },
+    "aws": {
+      "config": {
+        "accessKeyId": "AKIAJDKK6RN6FAYCLF6Q",
+        "secretAccessKey": "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",
+        "region": "ap-southeast-1"
+      },
+      "s3": {
+        "bucket": "jie-eternal"
+      }
+    }
+  }
+}
